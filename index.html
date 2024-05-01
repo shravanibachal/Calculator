@@ -1,34 +1,115 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restraunt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="calculator">
-    <input type="text" class="display" id="display" disabled>
-    <div class="buttons">
-      <button onclick="clearDisplay()" class="clear">C</button>
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('/')" class="operator">÷</button>
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('*')" class="operator">×</button>
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="appendToDisplay('-')" class="operator">-</button>
-      <button onclick="appendToDisplay('0')">0</button>
-      <button onclick="appendToDisplay('.')">.</button>
-      <button onclick="calculateResult()" class="equal">=</button>
-      <button onclick="appendToDisplay('+')" class="operator">+</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Category</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 class="logo">Shravani</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Eat Right Food</h1>
+            <p>Eat Healty, it is good for our health.</p>
+            <a href="#food-menu" class="btn btn-primary">Menu</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've beem making healthy food last for 10 years</h2>
+                <p>
+                    Healthy food plays a pivotal role in maintaining overall well-being, providing essential nutrients that fuel the body and support optimal function. Incorporating a balanced diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats can help reduce the risk of chronic diseases, boost energy levels, improve cognitive function, and promote a healthy weight. Additionally, choosing minimally processed foods and limiting intake of added sugars, saturated fats, and sodium can contribute to better long-term health outcomes. By making nutritious food choices, individuals can nurture their bodies and enhance their quality of life.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="food" />
+            </div>
+        </div>
+    </section>
+    <section id="food">
+        <h2>Types of food</h2>
+        <div class="food-container container">
+            <div class="food-type fruite">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>fruite</h3>
+                        <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type vegetable">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>vegetable</h3>
+                        <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type grin">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>grain</h3>
+                        <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+            </div>
+
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="E-Mail" />
+                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h2>Restraunt &copy; all rights reserved</h2>
+    </footer>
 </body>
+<!-- 
+    .................../ JS Code for smooth scrolling /...................... -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+
 </html>
